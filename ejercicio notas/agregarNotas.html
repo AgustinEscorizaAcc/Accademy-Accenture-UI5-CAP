@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGREGAR NOTAS MATERIAS</title>
+</head>
+<body >
+    <h1>INGRESE NOTAS</h1>
+    <form id="formNotas">
+        <div>
+            <label for="quimica">Quimica:</label>
+            <input type="number" id="quimica" name="quimica" required>
+        </div>
+        <div>
+            <label for="matematica">Matematica:</label>
+            <input type="number" id="matematica" name="matematica" required>
+        </div>
+        <div>
+            <label for="sociales">Ciencias Sociales:</label>
+            <input type="number" id="sociales" name="sociales" required>
+        </div>
+        <div>
+            <label for="fisica">Fisica:</label>
+            <input type="number" id="fisica" name="fisica" required>
+        </div>
+        <div>
+            <label for="historia">Historia:</label>
+            <input type="number" id="historia" name="historia" required>
+        </div>
+        <div>
+            <label for="biologia">Biologia:</label>
+            <input type="text" id="biologia" name="biologia" required>
+        </div>
+        <div>
+            <label for="informatica">Informatica:</label>
+            <input type="text" id="informatica" name="informatica" required>
+        </div>
+        <div>
+            <label for="idiomas">Idiomas:</label>
+            <input type="text" id="idiomas" name="idiomas" required>
+        </div>
+    </form>
+    <button type="button" class="btn btn-primary" id="cargarNotas" onclick="cargarNotas()">Cargar</button>
+    
+    <script language="JavaScript" type="text/javascript" src="agregarNotas.js"></script>
+</body>
+</html>

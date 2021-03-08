@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador por materias</title>
+</head>
+<body >
+    <h1>Materias</h1>
+    <label for="seleccion">Elija el parametro de busqueda</label>
+    <select name="seleccion" id="seleccion">
+        <option value="quimica">QUIMICA</option>
+        <option value="matematica">MATEMATICA</option>
+        <option value="sociales">CIENCIAS SOCIALES</option>
+        <option value="fisica">FISICA</option>
+        <option value="historia">HISTORIA</option>
+        <option value="biologia">BIOLOGIA</option>
+        <option value="informatica">INFORMATICA</option>
+        <option value="idiomas">IDIOMAS</option>
+    </select><br><br>
+
+    <h3 id="headerAprobados" hidden>ALUMNOS APROBADOS</h3>
+    <table id="tablaAlumnosAprobados"></table>
+
+    <h3 id="headerDesaprobados" hidden>ALUMNOS DESAPROBADOS</h3>
+    <table id="tablaAlumnosDesaprobados"></table>
+
+    <button type="button" class="btn btn-primary" id="listar" onclick="listarMateria()">Listar Materia</button>
+    <button type="button" class="btn btn-primary" id="limpiar" onclick="limpiarTablas()" hidden>Limpiar tablas</button>
+    <button type="button" class="btn btn-warning" id="menu" onclick="menu()">Volver al menu</button>
+    <button type="button" class="btn btn-danger" id="salir" onclick="salir()">Salir del programa</button>
+    <script language="JavaScript" type="text/javascript" src="listarMateria.js"></script>
+</body>
+</html>

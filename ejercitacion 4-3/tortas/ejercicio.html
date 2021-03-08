@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>PASTELERIA</title>
+
+</head>
+
+<body>
+<form id="f1">
+<table bgcolor="grey">
+<caption>VENTA DE TORTAS</caption>
+<tr>
+    <td align="right"> PRECIO POR TORTA : </td>
+    <td><input type="text" id="precio" name="precio" size="4" value="150" readonly/></td>
+</tr>
+<tr>
+<td align="right">CANTIDAD DE TORTAS A COMPRAR: </td>
+<td><input type="text" id="cantidad" name="cantidad" size="4" required/></td>
+<td colspan="2" align="center"><input type="button" value="Realizar pedido" onclick="calcular()" /></td>
+</tr>
+<tr>
+<td colspan="6"><hr /></td>
+</tr>
+<tr>
+<td align="right">TORTAS REGALADAS : </td>
+<td><input type="text" id="regaladas" size="5" readonly/></td>
+<td align="right">TORTAS TOTALES : </td>
+<td><input type="text" id="totalTortas" size="5" readonly/></td>
+
+</tr>
+<tr>
+<td align="right">DESCUENTO: </td>
+<td><input type="text" id="descuento" size="5" readonly /></td>
+<td align="right">PRECIO FINAL: </td>
+<td><input type="text" id="precioFinal" size="5" readonly /></td>
+</tr>
+</table>
+</form>
+<script language="JavaScript" type="text/javascript" src="ejercicio.js"></script>
+</body>
+
+</html>
